@@ -49,9 +49,6 @@ controle.forEach((element) => {
 function manipulaDados(operacao, controle) {
     const elementoClicado = controle.querySelector("[data-contador]");
     if (operacao === "-") {
-        if (elementoClicado.value < 1) {
-            elementoClicado.value = 0;
-        } else {
             elementoClicado.value = parseInt(elementoClicado.value) - 1;
         }
 
